@@ -9,5 +9,5 @@ jobs:
   dummy_test:
     runs-on: ubuntu-latest
     steps:
-     if: startsWith(github.event.head_commit.modified, 'major')
-      - run: echo 'Make renovate automerge excuted'
+    if: startsWith(github.event.head_commit.modified, 'major/')
+       - run: echo 'Make renovate automerge excuted'
