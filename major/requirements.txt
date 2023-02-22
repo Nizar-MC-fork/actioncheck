@@ -1,1 +1,2 @@
 python-gitlab==1.14.0
+requests==1.2.3
