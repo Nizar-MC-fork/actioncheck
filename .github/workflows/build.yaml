@@ -1,15 +1,13 @@
-name: My Workflow
-
+name: mybiuld
 on:
   pull_request:
     branches: [main]
   push:
     branches: [main]
-
+    
 jobs:
   dummy_test:
     runs-on: ubuntu-latest
-     - name:step 1
-    steps:    
-       if: startsWith(github.event.head_commit.modified, 'major')
-        - run:echo 'Make renovate automerge excuted'
+    steps:
+     if: startsWith(github.event.head_commit.modified, 'major')
+      - run: echo 'Make renovate automerge excuted'
