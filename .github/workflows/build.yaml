@@ -1,13 +1,17 @@
-name: mybiuld
 on:
   pull_request:
     branches: [main]
   push:
-    branches: [main]
-    
+    branches:
+      - main
+    paths:
+      - 'major/**'
+
 jobs:
   dummy_test:
     runs-on: ubuntu-latest
     steps:
-    if: startsWith(github.event.head_commit.modified, 'major/')
        - run: echo 'Make renovate automerge excuted'
+       
+       
+       
